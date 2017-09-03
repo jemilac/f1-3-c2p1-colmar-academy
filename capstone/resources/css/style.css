@@ -1,0 +1,396 @@
+/*general style*/
+
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #33334d;
+}
+
+h1 {
+ font-weight: bold;
+ font-size: 3rem;
+ color: #FF19B1;
+ margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    margin: 2rem 1rem;
+    }
+}
+
+h2 {
+ font-weight: bold;
+ font-size: 1.8rem;
+ color: #FF19B1;
+ margin-top: 2rem;
+ margin-bottom: 1rem;
+}
+
+h3 {
+ font-weight: bold;
+ font-size: 1.5rem;
+ color: #FF19B1;
+ margin-top: 1rem;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 480px) {
+  p {
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    }
+}
+
+span {
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 1rem 0;
+}
+
+.cta-button {
+    background-color: #F3CC03;
+    border: none;
+    color: white;
+    padding: 0.5rem 1.25rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.cta-button:hover {
+  background-color: #F69D09;
+}
+
+a {
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 300;
+  color: #33334d;
+}
+
+.cta-link {
+  font-size: 1rem;
+  color: #A3DD35;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.cta-link:hover {
+  color: #04FF5F;
+}
+/*header menu*/
+
+header {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  width: 100%;
+  height: 64px;
+  top: 0;
+  left: 0;
+  border-bottom: 1px #808080 solid;
+}
+
+.logo-container-desktop {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1.5rem;
+  flex: 1;
+}
+
+#name {
+  font-weight: 600;
+  color: #FF19B1;
+}
+
+.nav-container-desktop {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 1.5rem;
+  flex: 1;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+ul li {
+  padding-left: 1rem;
+}
+
+@media only screen and (max-width: 1600px) {
+  .nav-container-mobile {
+    display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+  .nav-container-desktop,
+  .logo-container-desktop {
+    display: none;
+    }
+
+  .nav-container-mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 64px;
+    width: 100%;
+    background-color: white;
+  }
+  }
+/*body content part*/
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 4rem;
+  background-color: white;
+}
+
+.module-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px #808080 solid;
+}
+
+@media only screen and (max-width: 480px) {
+  .module-a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+.left-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 1.5rem;
+  width: 60%;
+}
+
+@media only screen and (max-width: 480px) {
+  .left-block {
+    margin: 0 auto;
+    min-width: 100%;
+    }
+  #one-student-img,
+  #one-student-text {
+    display: none;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: "auto";
+}
+
+#endorser {
+  font-weight: 600;
+}
+
+.right-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+@media only screen and (max-width: 480px) {
+  .right-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    }
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 2rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .text-container {
+    margin-right: 0;
+    }
+}
+
+.header h2 {
+  padding: 2rem;
+  align-self: center;
+}
+
+.mini-block {
+  display: flex;
+  align-items: center;
+  margin: 1rem 1rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .mini-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+}
+
+.mini-block:hover {
+  background-color: #f5f5f5;
+}
+
+.mini-block .image-container {
+  max-width: 35%;
+  max-height: auto;
+}
+
+.mini-block .image-container img{
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 1600px) {
+  .mobile-image {
+    display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+  .desktop-image {
+    display: none;
+    }
+  .mobile-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+.mini-block .text-container {
+  max-width: 65%;
+  height: "auto";
+  padding-left: 1rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .mini-block .text-container,
+  .mini-block .image-container {
+    min-width: 100%;
+    height: "auto";
+    }
+}
+
+.title {
+  text-align: center;
+  padding-bottom: 1rem;
+  border-top: 1px #808080 solid;
+}
+/*module-b*/
+.module-b {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 4.5rem 2rem 4.5rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 100%;
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 30%;
+}
+
+@media only screen and (max-width: 480px) {
+  .module-b {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem 2rem 1rem;
+  }
+  .course .text-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 1rem;
+  }
+
+  .course .text-container h3 {
+    background-color: #f5f5f5;
+    border: none;
+    color: #33334d;
+    padding: 0.5rem 1.25rem;
+    text-align: center;
+    text-decoration: none;#f5f5f5
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: 19rem;
+  }
+
+  .module-b .course .image-container,
+  .sub-image,
+  .sub-info {
+    display: none;
+    }
+}
+
+.left-block .image-container video{
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 480px) {
+  #video-intro h3,
+  #video-intro span,
+  #sub-info {
+    display: none;
+    }
+}
+/*footer part*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  width: 100%;
+  padding-top: 1rem;
+}
+
+footer span {
+  padding-left: 2rem;
+}
+
+footer ul {
+  align-items: flex-start;
+  margin-right: 1.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  footer ul {
+    display: none;
+    }
+}
